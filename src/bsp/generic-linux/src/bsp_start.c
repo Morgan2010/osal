@@ -196,7 +196,7 @@ void OS_BSP_Shutdown_Impl(void)
 **    (none)
 */
 
-int main(int argc, char *argv[])
+int linux_main(int argc, char *argv[])
 {
     /*
      * Initially clear the global objects
