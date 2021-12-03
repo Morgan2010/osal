@@ -79,3 +79,11 @@ add_library(osal_posix_impl OBJECT
     ${POSIX_BASE_SRCLIST}
     ${POSIX_IMPL_SRCLIST}
 )
+
+find_package(librt)
+if (librt_FOUND)
+
+endif ()
+if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
+    
+endif ()
